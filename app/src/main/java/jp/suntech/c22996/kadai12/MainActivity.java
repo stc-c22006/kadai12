@@ -2,20 +2,19 @@ package jp.suntech.c22996.kadai12;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
+
 
 import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -44,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             EditText input3 = findViewById(R.id.etMailtitle);
             EditText input4 = findViewById(R.id.etComment);
             //メッセージを表示するTextViewオブジェクトを取得
-            TextView output = findViewById(R.id.btConfirm);
+            //TextView output = findViewById(R.id.btConfirm);
 
             int id = view.getId();
             String inputStr = input.getText().toString();
